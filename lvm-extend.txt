@@ -1,0 +1,15 @@
+## check the new disk using fdisk -l
+
+# pvcreate /dev/<newdisk>
+
+# vgs \\ check the volume group and replace in <vggroupname> in below commands.
+
+# vgextend <vggroupname> /dev/<newdisk>
+
+# vgdisplay \\check the size again
+
+# lvs \\check the logical volume name and replace in <lvname> in below commands.
+
+# lvextend -l +100%FREE <lvname>.   \\extend
+
+# resize2fs <lvname>
