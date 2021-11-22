@@ -28,5 +28,5 @@ fdisk -l
    ```
  **expand the file system to adjust with the new change**
    ```
-   resize2fs lvname`
+   resize2fs lvname
    ```
